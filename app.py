@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 from datetime import datetime
 from pathlib import Path
 
@@ -112,14 +111,4 @@ with gr.Blocks(title="Video Person Replacer") as demo:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run the Video Person Replacer web app.")
-    parser.add_argument("--host", default="127.0.0.1", help="Host/IP to bind the Gradio server to.")
-    parser.add_argument("--port", type=int, default=7860, help="Port for the Gradio server.")
-    parser.add_argument(
-        "--share",
-        action="store_true",
-        help="Create a public Gradio share URL (useful for remote/cloud machines).",
-    )
-    args = parser.parse_args()
-
-    demo.launch(server_name=args.host, server_port=args.port, share=args.share)
+    demo.launch()

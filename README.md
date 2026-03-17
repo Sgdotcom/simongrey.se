@@ -29,14 +29,6 @@ pip install -r requirements.txt
 python3 app.py
 ```
 
-If you are running on a remote/cloud machine and cannot open localhost from your own browser, run:
-
-```bash
-python3 app.py --host 0.0.0.0 --share
-```
-
-This prints a public Gradio URL you can open directly.
-
 Then open the local Gradio URL in your browser, upload:
 
 - **Source Person Image**
